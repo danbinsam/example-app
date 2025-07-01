@@ -3,5 +3,13 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::post('/login', function () {
+    return redirect('/');
+});
+
+Route::get('/login', function () {
+    return view('login');
 });
