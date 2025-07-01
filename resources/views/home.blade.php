@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
@@ -17,7 +17,24 @@
                     <h1 class="text-lg font-medium text-[#737373]">
                         Hai, Jokowi
                     </h1>
-                    <img class="w-8 h-8 rounded-full" src="{{asset('images/jokowi.jpg')}}" alt="profile">
+                    <div class="relative">
+                        <img id="avatarButton" type="button" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-end" class="w-8 h-8 rounded-full cursor-pointer" src="{{asset('images/jokowi.jpg')}}" alt="User dropdown">
+
+                        <!-- Dropdown menu -->
+                        <div id="userDropdown" class="z-10 hidden w-max bg-white rounded-lg shadow border border-gray-300">
+                            <ul class="text-sm text-gray-700" aria-labelledby="avatarButton">
+                              <li>
+                                <form method="POST" action="/logout" class="w-full">
+                                    @csrf
+                                    <button type="submit" class="flex items-center gap-2 w-full rounded-lg px-3 py-2 text-left hover:bg-gray-100">
+                                        <img src="{{asset('images/icon-logout.png')}}" class="w-5 h-5" alt="icon logout">
+                                        <span class="text-lg font-medium text-[#737373] whitespace-nowrap">Logout</span>
+                                    </button>
+                                </form>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </nav>
             <h1 class="text-lg font-medium text-[#737373] mt-16">
@@ -34,6 +51,33 @@
                                 <div class="flex justify-between">
                                     <h5 class="text-xs font-normal text-primary-600">06:57</h5>
                                     <img class="w-7 h-7" src="{{asset('images/icon-datang.png')}}" alt="icon presensi datang">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="block aspect-square rounded-lg bg-[#FEF2F2] border border-[#FEE2E2]">
+                            <div class="p-4 flex flex-col justify-between h-full">
+                                <h5 class="text-xl font-medium text-[#dc2626]">Presensi<br>Pulang</h5>
+                                <div class="flex justify-between">
+                                    <h5 class="text-xs font-normal text-[#dc2626]">16:03</h5>
+                                    <img class="w-7 h-7" src="{{asset('images/icon-pulang.png')}}" alt="icon presensi pulang">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="block aspect-square rounded-lg bg-[#F2FDF5] border border-[#D3F3DF]">
+                            <div class="p-4 flex flex-col justify-between h-full">
+                                <h5 class="text-xl font-medium text-[#16A34A]">Kebersihan<br>Harian</h5>
+                                <div class="flex justify-between">
+                                    <h5 class="text-xs font-normal text-[#16A34A]"></h5>
+                                    <img class="w-7 h-7" src="{{asset('images/icon-kebersihan.png')}}" alt="icon kebersihan harian">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="block aspect-square rounded-lg bg-[#EFF6FF] border border-[#BFDBFE]">
+                            <div class="p-4 flex flex-col justify-between h-full">
+                                <h5 class="text-xl font-medium text-[#2563EB]">House<br>Keeping</h5>
+                                <div class="flex justify-between">
+                                    <h5 class="text-xs font-normal text-[#2563EB]"></h5>
+                                    <img class="w-7 h-7" src="{{asset('images/icon-housekeeping.png')}}" alt="icon house keeping">
                                 </div>
                             </div>
                         </a>

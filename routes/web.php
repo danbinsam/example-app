@@ -13,3 +13,7 @@ Route::post('/login', function () {
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::post('/logout', function () {
+    return redirect('/login');
+});
