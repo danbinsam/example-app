@@ -49,3 +49,19 @@ Route::get('/kebersihan', function () {
 Route::post('/isikebersihan', function () {
     return redirect('/');
 });
+
+Route::get('/housekeeping-tempat', function () {
+    return view('housekeeping-tempat');
+});
+
+Route::post('/isihousekeeping-tempat', function () {
+    return redirect('/housekeeping-sop');
+});
+
+Route::get('/housekeeping-sop', function () {
+    return view('housekeeping-sop');
+});
+
+Route::post('/isihousekeeping-sop', function () {
+    return redirect('/');
+});

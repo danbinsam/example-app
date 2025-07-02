@@ -72,7 +72,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="block aspect-square rounded-lg bg-[#EFF6FF] border border-[#BFDBFE]">
+                        <a href="/housekeeping-tempat" class="block aspect-square rounded-lg bg-[#EFF6FF] border border-[#BFDBFE]">
                             <div class="p-4 flex flex-col justify-between h-full">
                                 <h5 class="text-xl font-medium text-[#2563EB]">House<br>Keeping</h5>
                                 <div class="flex justify-between">
