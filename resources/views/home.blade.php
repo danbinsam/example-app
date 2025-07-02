@@ -54,7 +54,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="block aspect-square rounded-lg bg-[#FEF2F2] border border-[#FEE2E2]">
+                        <a href="/pulang" class="block aspect-square rounded-lg bg-[#FEF2F2] border border-[#FEE2E2]">
                             <div class="p-4 flex flex-col justify-between h-full">
                                 <h5 class="text-xl font-medium text-[#dc2626]">Presensi<br>Pulang</h5>
                                 <div class="flex justify-between">

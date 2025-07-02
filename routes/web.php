@@ -33,3 +33,11 @@ Route::get('/datang', function () {
 Route::post('/presensidatang', function () {
     return redirect('/');
 });
+
+Route::get('/pulang', function () {
+    return view('pulang');
+});
+
+Route::post('/presensipulang', function () {
+    return redirect('/');
+});
