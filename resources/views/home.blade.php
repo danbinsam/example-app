@@ -45,7 +45,7 @@
             </h1>
             <div>
                 <div class="grid grid-cols-2 gap-4 ">
-                        <a href="" class="block aspect-square rounded-lg bg-[#fffbf3] border border-[#FDEED4]">
+                        <a href="/jadwal" class="block aspect-square rounded-lg bg-[#fffbf3] border border-[#FDEED4]">
                             <div class="p-4 flex flex-col justify-between h-full">
                                 <h5 class="text-xl font-medium text-primary-600">Presensi<br>Datang</h5>
                                 <div class="flex justify-between">

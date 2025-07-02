@@ -1,4 +1,6 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
+import forms from '@tailwindcss/forms';
+import flowbite from 'flowbite/plugin';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -8,6 +10,7 @@ export default {
         './resources/**/*.blade.php',
         './resources/**/*.js',
         './resources/**/*.vue',
+        './node_modules/flowbite/**/*.js',
     ],
     theme: {
         extend: {
@@ -31,5 +34,8 @@ export default {
             },
         },
     },
-    plugins: [],
+    plugins: [
+        forms,
+        flowbite
+    ],
 };

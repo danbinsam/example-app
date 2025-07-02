@@ -17,3 +17,15 @@ Route::get('/login', function () {
 Route::post('/logout', function () {
     return redirect('/login');
 });
+
+Route::get('/jadwal', function () {
+    return view('jadwal');
+});
+
+Route::post('/pilihjadwal', function () {
+    return redirect('/datang');
+});
+
+Route::get('/datang', function () {
+    return view('datang');
+});
