@@ -29,3 +29,7 @@ Route::post('/pilihjadwal', function () {
 Route::get('/datang', function () {
     return view('datang');
 });
+
+Route::post('/presensidatang', function () {
+    return redirect('/');
+});
