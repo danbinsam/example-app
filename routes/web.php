@@ -41,3 +41,11 @@ Route::get('/pulang', function () {
 Route::post('/presensipulang', function () {
     return redirect('/');
 });
+
+Route::get('/kebersihan', function () {
+    return view('kebersihan');
+});
+
+Route::post('/isikebersihan', function () {
+    return redirect('/');
+});

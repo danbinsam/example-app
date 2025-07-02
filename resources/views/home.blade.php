@@ -63,7 +63,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="block aspect-square rounded-lg bg-[#F2FDF5] border border-[#D3F3DF]">
+                        <a href="/kebersihan" class="block aspect-square rounded-lg bg-[#F2FDF5] border border-[#D3F3DF]">
                             <div class="p-4 flex flex-col justify-between h-full">
                                 <h5 class="text-xl font-medium text-[#16A34A]">Kebersihan<br>Harian</h5>
                                 <div class="flex justify-between">
